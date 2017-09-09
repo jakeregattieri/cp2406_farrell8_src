@@ -6,7 +6,7 @@ public class DebugSix4
 {
    public static void main(String[] args)
    {
-      int high, low, count;
+      int high, low, count = 0;
       final int NUM = 5;
       Scanner input = new Scanner(System.in);
       // Prompt user to enter high and low values
@@ -17,7 +17,7 @@ public class DebugSix4
       low = input.nextInt();
       System.out.print("Enter high value... ");
       high = input.nextInt();
-      while(low == high)
+      while(low >= high)
       {
          System.out.println("The number you entered for a high number, " +
             high + ", is not more than " + low);
